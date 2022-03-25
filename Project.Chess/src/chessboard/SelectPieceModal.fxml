@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="350.0" prefWidth="250.0" styleClass="mainMenu" stylesheets="@../main_menu/MainMenu.css"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="chessboard.SelectPieceModal">
+   <Button fx:id="bishopButton" mnemonicParsing="false" onAction="#pieceSelectionHandler" prefHeight="43.0" prefWidth="116.0"
+           styleClass="btn" text="Bishop" textFill="WHITE">
+      <font>
+         <Font name="Calibri Bold" size="16.0"/>
+      </font>
+      <VBox.margin>
+         <Insets bottom="15.0"/>
+      </VBox.margin>
+   </Button>
+   <Button fx:id="knightButton" layoutX="77.0" layoutY="164.0" mnemonicParsing="false" onAction="#pieceSelectionHandler"
+           prefHeight="43.0" prefWidth="116.0" styleClass="btn" text="Knight" textFill="WHITE">
+      <font>
+         <Font name="Calibri Bold" size="16.0"/>
+      </font>
+      <VBox.margin>
+         <Insets bottom="15.0"/>
+      </VBox.margin>
+   </Button>
+   <Button fx:id="queenButton" layoutX="77.0" layoutY="185.0" mnemonicParsing="false" onAction="#pieceSelectionHandler"
+           prefHeight="43.0" prefWidth="116.0" styleClass="btn" text="Queen" textFill="WHITE">
+      <font>
+         <Font name="Calibri Bold" size="16.0"/>
+      </font>
+      <VBox.margin>
+         <Insets bottom="15.0"/>
+      </VBox.margin>
+   </Button>
+   <Button fx:id="rookButton" layoutX="77.0" layoutY="222.0" mnemonicParsing="false" onAction="#pieceSelectionHandler"
+           prefHeight="43.0" prefWidth="116.0" styleClass="btn" text="Rook" textFill="WHITE">
+      <font>
+         <Font name="Calibri Bold" size="16.0"/>
+      </font>
+   </Button>
+</VBox>

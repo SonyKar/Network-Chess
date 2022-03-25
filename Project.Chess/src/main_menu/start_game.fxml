@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="670.0" styleClass="mainMenu" stylesheets="@MainMenu.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_menu.MainMenu">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="129.39999237060547" minHeight="10.0" prefHeight="64.39999237060547" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="206.40000762939454" minHeight="10.0" prefHeight="206.40000762939454" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <VBox alignment="CENTER" prefHeight="251.0" prefWidth="670.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <children>
+                <Button id="startGameButton" fx:id="whiteButton" mnemonicParsing="false" onAction="#chooseColorButtonHandler" prefHeight="50.0" prefWidth="140.0" stylesheets="@MainMenu.css" text="White" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button id="findGameButton" fx:id="blackButton" mnemonicParsing="false" onAction="#chooseColorButtonHandler" prefHeight="50.0" prefWidth="140.0" stylesheets="@MainMenu.css" text="Black" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                    </font>
+                </Button>
+            <Button id="findGameButton" fx:id="random" layoutX="275.0" layoutY="96.0" mnemonicParsing="false" onAction="#randomColorButtonHandler" prefHeight="50.0" prefWidth="140.0" stylesheets="@MainMenu.css" text="Random" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+                <Button id="exitButton" fx:id="backButton" mnemonicParsing="false" onAction="#backButtonHandler" onMouseClicked="#exitButtonHandler" prefHeight="34.0" prefWidth="99.0" stylesheets="@MainMenu.css" text="back" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <Label prefHeight="46.0" prefWidth="462.0" styleClass="mainHeader" stylesheets="@MainMenu.css" text="Choose Your Color" textAlignment="CENTER" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font name="Calibri Bold" size="40.0" />
+            </font>
+        </Label>
+    </children>
+</GridPane>

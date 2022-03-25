@@ -1,0 +1,22 @@
+.whiteSquare {
+    -fx-background-color: #D5D7A9;
+}
+.blackSquare {
+    -fx-background-color: #779556;
+}
+.blackPiece {
+    -fx-background-color: #575452;
+}
+.whitePiece {
+    -fx-background-color: #f2f2f2;
+}
+
+.bordered-move, .movingPiece {
+    -fx-border-width: 3px;
+}
+.bordered-move {
+    -fx-border-color: #f2f2f2;
+}
+.movingPiece {
+    -fx-border-color: #eb4c42!important;
+}
